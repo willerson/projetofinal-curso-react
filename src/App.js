@@ -6,6 +6,7 @@ import Header from './Components/Header';
 import ProtectecRoute from './Components/Helper/ProtectecRoute';
 import Home from './Components/Home';
 import Login from './Components/Login/Login';
+import Photo from './Components/Photo/Photo';
 import User from './Components/User/User';
 import { UserStorage } from './UserContext';
 
@@ -26,6 +27,7 @@ const App = () => {
                 </ProtectecRoute>
               }
             />
+            <Route path="foto/:id" element={<Photo />} />
           </Routes>
           <Footer />
         </UserStorage>
